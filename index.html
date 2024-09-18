@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Diogo Gonçalves</title>
+		<meta name="author" content="Diogo Gonçalves">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="icon" href="images/logos/unicamp.svg">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%">
+					<h2>Dynamic Network Slicing for User Mobility Support in 5G Networks</h2>
+						<p class="r-fit-text"><b>Diogo Gonçalves</b>, Luiz Bittencourt, and Edmundo Madeira</p>
+						<small>Institute of Computing - University of Campinas - UNICAMP/Brazil</small>
+					<br>
+					<img src="images/logos/unicampbw.png" style="width: 7%; height: 7%; box-shadow: 0 0 0px rgba(0, 0, 0, 0); border: 10px">
+					<img src="images/logos/ic_logobw.png" style="width: 10%; height: 10%; box-shadow: 0 0 0px rgba(0, 0, 0, 0); border: 10px">
+					<img src="images/logos/lrc_logo_namebw.png" style="width: 29%; height: 29%; box-shadow: 0 0 0px rgba(0, 0, 0, 0); border: 10px">
+					<img src="images/logos/interscity_logobw.png" style="width: 29%; height: 29%; box-shadow: 0 0 0px rgba(0, 0, 0, 0); border: 10px">
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+					<h2>Agenda</h2>
+					<ul>
+						<li>Introduction</li>
+						<li>Background</li>
+						<li>Related works</li>
+						<li>MobFogSim</li>
+						<li>Dynamic Network Slicing for Mobile Users</li>
+						<li>Overhead and performance of Dynamic Network Slice allocation</li>
+						<li>Conclusion</li>
+					</ul>
+				</section>
+				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%">
+					<p style="font-size: 3em; font-family: 'Dancing Script', cursive;">Thank you</p>
+					<p><b>Diogo Gonçalves<br>diogomg<span style="color: #c2d102">@</span>lrc.ic.unicamp.br<br>github.com<span style="color: #c2d102">/</span>diogomg<span style="color: #c2d102">/</span>MobFogSim</b></p>
+					<img class="fragment fade-up" data-autoslide="500" src="images/logos/interscity_logobw.png" style="width: 30%; height: 30%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
+					<img class="fragment fade-up" data-autoslide="500" src="images/logos/logo-fapespbw.png" style="width: 21%; height: 21%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
+					<img class="fragment fade-up" data-autoslide="500" src="images/logos/capes_logobw.png" style="width: 9%; height: 9%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
+					<img class="fragment fade-up" data-autoslide="500" src="images/logos/CNPq_logobw.png" style="width: 21%; height: 21%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
+					<img class="fragment fade-up" data-autoslide="0" src="images/logos/unicampbw.png" style="width: 7%; height: 7%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
+					<p style="font-size: 17px;">Um agradecimento, em especial, à Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), processo nº 2021/05253-0.</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<!-- rodape -->
+		<div class="share-reveal" style="display: none; position: absolute; bottom: 0px; left: 50%; transform: translate(-50%, -50%);">
+			<a class="share-reveal-editor">Diogo Gonçalves - diogomg@lrc.ic.unicamp.br - Cardiff University presentation - oct 15th 2023</a>
+		</div>
+		<!-- style do rodape -->
+		<style>
+			.share-reveal a {
+				display: inline-block;
+				height: 34px;
+				line-height: 32px;
+				padding: 0 10px;
+				color: #000;
+				background-color:#FFF;
+				font-family: Helvetica, sans-serif;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 12px;
+				vertical-align: top;
+				box-sizing: border-box;
+				border-color: #000000;
+			}
+
+			.share-reveal .share-reveal-editor {
+				line-height: 30px;
+			}
+
+			.share-reveal a + a {
+				margin-left: 10px;
+			}
+
+			.share-reveal-editor {
+				border: 2px solid #000;
+			}
+			
+			.icons img {
+				background-color: rgba(255, 255, 255, 0);
+			}
+			
+			.icons img + img {
+				margin-left: -4px;
+			}
+		</style>
+
+		
+		<script>
+			if( !navigator.userAgent.match( /(iphone|android)/gi ) && !!document.querySelector ) {
+				document.querySelector( '.icons' ).style.display = 'block';
+				document.querySelector( '.share-reveal' ).style.display = 'block';
+			}
+			
+			Reveal.addEventListener( 'whitetheme', function() {
+				document.querySelector( '.pic1' ).src = 'images/logos/unicamp.svg';
+			}, false );
+			
+			Reveal.addEventListener( 'darktheme', function() {
+				document.querySelector( '.pic1' ).src = 'images/logos/unicampbw.png';
+			}, false );
+		</script>
+	</body>
+</html>
