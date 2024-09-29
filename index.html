@@ -1405,6 +1405,52 @@
 					<aside class="notes">
 					</aside>
 				</section>
+
+				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+					<h2>Migration triggers</h2>
+					<img src="images/dynamicMigrationPoint.png" style="width: 60%; height: 60% border: 1px solid #000000;">
+					<p>Visual concept of Access Point’ area and its relationship with MobFogSim’s Migration Policy</p>
+				</section>
+
+				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+					<h2>Migration algorithm</h2>
+					<pre data-id="code-animation"><code data-trim data-line-numbers>
+					while{mobileDevice is within the migration zone}{
+						mobileDevice.destinationFogNode = migrationDecision(
+							slices.fogNodes, mobileDevice, migrationStrategy);
+						if{mobileDevice.destinationFogNode !=
+							mobileDevice.currentFogNode}{
+							if{mobileDevice crosses the MigrationPoint}{
+								startMigration(slices, mobileDevice.sourceFogNode,
+									mobileDevice.destionationFogNode);
+								while{migration is being performed}{
+									requestSliceReshaping(slices,
+										mobileDevice.sourceFogNode,
+										mobileDevice.destionationFogNode);
+								}
+							}
+						}
+					}
+					</code></pre>
+				</section>
+
+				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+					<h2>Slice reconfiguration algorithm</h2>
+					<pre data-id="code-animation"><code data-trim data-line-numbers>
+					if{isThereAnIncresingTrafficVariation()}{
+						link = linkPresentingAnIncresingTrafficVariation();
+						if{isThereUnallocatedBandwidth(slice, link)}{
+							allocateBandwidthForSlice(slice, link);
+						}
+						else{
+							if{isThereBandwidthUnderutilisation(slices, link)}{
+								deallocateBandwidthFromSlices(slice, setOfSlices, link);
+								allocateBandwidthForSlice(slices, link);
+							}
+						}
+					}
+					</code></pre>
+				</section>
 			</div>
 		</div>
 
