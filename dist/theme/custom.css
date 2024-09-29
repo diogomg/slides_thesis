@@ -14,7 +14,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
+  --r-background-color: #000;
   --r-main-font: Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
   --r-main-color: #fff;
@@ -33,7 +33,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #42affa;
+  /*  --r-link-color: #d53448; */
+/*  --r-link-color: #42affa;*/
+  --r-link-color: #84a9e8;
   --r-link-color-dark: #068de9;
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: rgba(66, 175, 250, 0.75);
@@ -87,7 +89,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-weight: var(--r-heading-font-weight);
   line-height: var(--r-heading-line-height);
   letter-spacing: var(--r-heading-letter-spacing);
-  text-transform: var(--r-heading-text-transform);
+/*  text-transform: var(--r-heading-text-transform);*/
   text-shadow: var(--r-heading-text-shadow);
   word-wrap: break-word;
 }
@@ -349,7 +351,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: var(--r-link-color);
-  font-size: 23px;
+  height: 7px;
 }
 
 /*********************************************
