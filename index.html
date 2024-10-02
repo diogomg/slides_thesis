@@ -48,7 +48,6 @@
 				</section>
 
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
-					<h3>Introduction<h3>
 					<h3>Who use mobile networks?</h3>
 					<img src="images/mobilecomtimeline.png" style="width: 90%; height: 90%">
 					<aside class="notes">
@@ -64,7 +63,7 @@
 				</section>
 				
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
-					<h3>The role of mobile users</h3>
+					<h3>Mobile users in the network infrastructure</h3>
 					<img src="images/its2.png" style="width: 70%; height: 70%">
 					
 					<aside class="notes">
@@ -587,7 +586,7 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>MobFogSim Validation</h3>
 					<p>Testbed vs MobFogSim</p>
 					<img src="images/TMT.png" style="width: 40%; height: 40%;">
@@ -598,7 +597,7 @@
 						Um dos resultados que nós podemos comparar é o tempo de migração, quanto tempo foi necessario pra realizar uma migração. Nós podemos ver que os resultados da infraestrutura real, no grafico a direita, são compativeis com os resultados do simulador, ilustrado no grafico da esquerda, pras duas configurações de rede que nós utilizamos, uma mais rapida e outra mais lenta.
 					</aside>
 				</section>
-
+ 
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<h3>MobFogSim Validation</h3>
 					<p>Testbed vs MobFogSim</p>
@@ -764,7 +763,7 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Static Slicing Allocation Results</h3>
 					<p>Migration time, link usage, and wasted bandwidth</p>
 					<img src="images/migration_time_UCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
@@ -773,6 +772,39 @@
 
 					<aside class="notes">
 						(next) No grafico da esquerda nós podemos ver o tempo de migração. O slice 1 é representado pela cor azul e o slice 2 pela cor vermelha. Nós podemos observar que quanto maior a demanda, pior fica os resultados para aquele slice, ja que mais usuarios tem que dividir a mesma fatia de recursos. A quantidade de recursos alocada pra cada slice tambem prejudica o desempenho, quanto mais recursos, mais rapido fica a migração. (next) O grafico do centro o quanto um link ficou sendo ocupado realizando migrações durante a simulação. Da pra ver que os links dos slices de pior desempenho ficaram sobrecarregados enquanto os de melhores desempenhos não utilizaram os recursos disponiveis pra eles durante todo o tempo. (next) Isso pode ser mensurado no grafico da direita que mostra a quantidade de dados que poderiam ser transmitidos enquanto esses links estavam ociosos.
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, link usage, and wasted bandwidth</p>
+					<img src="images/migration_time_UCC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+					<img src="images/link_usage_StaticUCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img src="images/wastedbandwidthStaticUCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, link usage, and wasted bandwidth</p>
+					<img src="images/migration_time_UCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img src="images/link_usage_StaticUCC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+					<img src="images/wastedbandwidthStaticUCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, link usage, and wasted bandwidth</p>
+					<img src="images/migration_time_UCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img src="images/link_usage_StaticUCC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img src="images/wastedbandwidthStaticUCC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+
+					<aside class="notes">
 					</aside>
 				</section>
 
@@ -788,14 +820,37 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Dynamic Slicing Allocation Results</h3>
-					<img  src="images/migration_time_dynamic_uni_UCC.png" style="width: 33%; height: 33%;">
+					<p>Migration time - Slice 1 / both slices sharing resources</p>
+					<img src="images/migration_time_dynamic_uni_UCC.png" style="width: 33%; height: 32%;">
 					<img src="images/migration_time_dynamic_legend_UCC.png" style="width: 32%; height: 32%;">
-					<img src="images/migration_time_dynamic_UCC.png" style="width: 33%; height: 33%;">
+					<img src="images/migration_time_dynamic_UCC.png" style="width: 33%; height: 32%;">
 
 					<aside class="notes">
 					(next) No grafico a esquerda, nos demos prioridade para um dos slices, no caso o slice 1, em azul. Quando o slice 2 terminava as suas migrações e apresentava recursos ociosos, nós realocamos esses recursos pro slice 1 para acelerar as migrações dele. Nós podemos ver que nos cenarios em que o slice 1 era superior ao slice 2 em termos de desempenho, isso se manteve. Porem, quando o slice 1 teria um desempenho muito pior ao slice 2, devido a ajuda desses recursos, o slice 1 passou a ter um teto de desempenho compativel com uma distribuição justa da capacidade do link (next). No grafico a direita, os dois slices trocam recursos quando apresentam recursos ociosos. Nesse cenario, o melhor caso de cada slice se manteve, mas o pior caso de cada um ganhou um teto compativel com a capacidade total do link.
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Migration time - Slice 1 / both slices sharing resources</p>
+					<img src="images/migration_time_dynamic_uni_UCC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+					<img src="images/migration_time_dynamic_legend_UCC.png" style="width: 32%; height: 32%;">
+					<img src="images/migration_time_dynamic_UCC.png" style="width: 32%; height: 32%;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Migration time - Slice 1 / both slices sharing resources</p>
+					<img src="images/migration_time_dynamic_uni_UCC.png" style="width: 32%; height: 32%;">
+					<img src="images/migration_time_dynamic_legend_UCC.png" style="width: 32%; height: 32%;">
+					<img src="images/migration_time_dynamic_UCC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+
+					<aside class="notes">
 					</aside>
 				</section>
 
@@ -856,7 +911,7 @@
 					</aside>
 				</section>
 				
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Static Slicing Allocation Results</h3>
 					<p>Migration time, number of migrations, and latency</p>
 					<img  src="images/tempomigracaoSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
@@ -868,7 +923,40 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, number of migrations, and latency</p>
+					<img  src="images/tempomigracaoSBRC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+					<img  src="images/migracoesSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img  src="images/latenciaSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, number of migrations, and latency</p>
+					<img  src="images/tempomigracaoSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img  src="images/migracoesSBRC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+					<img  src="images/latenciaSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+				
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Static Slicing Allocation Results</h3>
+					<p>Migration time, number of migrations, and latency</p>
+					<img  src="images/tempomigracaoSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img  src="images/migracoesSBRC.png" style="width: 32%; height: 32% border: 1px solid #000000;">
+					<img  src="images/latenciaSBRC.png" style="width: 32%; height: 32%; border: 4px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-auto-animate-restart>
 					<h3>Dynamic Slicing Allocation Results</h3>
 					<p>Allocated bandwidth, migration time, number of migrations, and latency</p>
 					<img  src="images/bandaalocadaDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
@@ -881,6 +969,54 @@
 					</aside>
 				</section>
 
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Allocated bandwidth, migration time, number of migrations, and latency</p>
+					<img  src="images/bandaalocadaDinamicoSBRC.png" style="width: 24%; height: 24%; border: 4px solid #000000;">
+					<img  src="images/tempoMigracaoDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/migracoesDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/latenciadinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Allocated bandwidth, migration time, number of migrations, and latency</p>
+					<img  src="images/bandaalocadaDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/tempoMigracaoDinamicoSBRC.png" style="width: 24%; height: 24%; border: 4px solid #000000;">
+					<img  src="images/migracoesDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/latenciadinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Allocated bandwidth, migration time, number of migrations, and latency</p>
+					<img  src="images/bandaalocadaDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/tempoMigracaoDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/migracoesDinamicoSBRC.png" style="width: 24%; height: 24%; border: 4px solid #000000;">
+					<img  src="images/latenciadinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Dynamic Slicing Allocation Results</h3>
+					<p>Allocated bandwidth, migration time, number of migrations, and latency</p>
+					<img  src="images/bandaalocadaDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/tempoMigracaoDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/migracoesDinamicoSBRC.png" style="width: 24%; height: 24% border: 1px solid #000000;">
+					<img  src="images/latenciadinamicoSBRC.png" style="width: 24%; height: 24%; border: 4px solid #000000;">
+
+					<aside class="notes">
+					</aside>
+				</section>
+
 				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<h3>What if end devices share its idle resources?</h3>
 					<aside class="notes">
@@ -889,7 +1025,7 @@
 
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<h3>Adhoc scenario</h3>
-					<img src="images/scenarios_adhoc.png" style="width: 70%; height: 70% border: 1px solid #000000;">
+					<img src="images/scenarios_adhoc.png" style="width: 80%; height: 80% border: 1px solid #000000;">
 
 					<aside class="notes">
 
@@ -965,12 +1101,36 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Adhoc scenario</h3>
 					<p>Edge node allocation</p>
 					<div class="r-vstack">
 						<img src="images/adhoccloudletresources.png" style="width: 70%; height: 70%;">
 						<img src="images/adhocvehicularresources.png" style="width: 70%; height: 70%;">
+					</div>
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Edge node allocation</p>
+					<div class="r-vstack">
+						<img src="images/adhoccloudletresources.png" style="width: 70%; height: 70%;  border: 4px solid #000000;">
+						<img src="images/adhocvehicularresources.png" style="width: 70%; height: 70%;">
+					</div>
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Edge node allocation</p>
+					<div class="r-vstack">
+						<img src="images/adhoccloudletresources.png" style="width: 70%; height: 70%;">
+						<img src="images/adhocvehicularresources.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
 					</div>
 					<aside class="notes">
 
@@ -988,12 +1148,38 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Adhoc scenario</h3>
 					<p>Service placement</p>
 					<div class="r-vstack">
 						<img src="images/adhocserviceplacement.png" style="width: 70%; height: 70%;">
 						<img src="images/adhocserviceplacementvehicles.png" style="width: 70%; height: 70%;">
+					</div>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Service placement</p>
+					<div class="r-vstack">
+						<img src="images/adhocserviceplacement.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
+						<img src="images/adhocserviceplacementvehicles.png" style="width: 70%; height: 70%;">
+					</div>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Service placement</p>
+					<div class="r-vstack">
+						<img src="images/adhocserviceplacement.png" style="width: 70%; height: 70%;">
+						<img src="images/adhocserviceplacementvehicles.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
 					</div>
 
 					<aside class="notes">
@@ -1013,12 +1199,38 @@
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Adhoc scenario</h3>
 					<p>Service Migration</p>
 					<div class="r-vstack">
 						<img src="images/adhocservicemigrations.png" style="width: 70%; height: 70%;">
 						<img src="images/adhocmigrationtime.png" style="width: 70%; height: 70%;">
+					</div>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Service Migration</p>
+					<div class="r-vstack">
+						<img src="images/adhocservicemigrations.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
+						<img src="images/adhocmigrationtime.png" style="width: 70%; height: 70%;">
+					</div>
+
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Adhoc scenario</h3>
+					<p>Service Migration</p>
+					<div class="r-vstack">
+						<img src="images/adhocservicemigrations.png" style="width: 70%; height: 70%;">
+						<img src="images/adhocmigrationtime.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
 					</div>
 
 					<aside class="notes">
@@ -1038,15 +1250,21 @@
 					</aside>
 				</section>
 
-				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>What is the cost of slice reconfiguration?</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>What is the cost of slice reconfiguration?</h3>
+					<img src="images/whatitcost.png" style="width: 50%; height: 50%;">
 					<aside class="notes">
 					</aside>
 				</section>
 
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<h3>Reconfiguration overhead</h3>
-					<div class="r-stack">
 						<div class="r-hstack">
 							<img src="images/dynamic_slicing_over_time.png" style="width: 100%; height: 100%;">
 							<ul>
@@ -1056,14 +1274,12 @@
 								<p style="font-size: 0.8em;">What is the impact of reconfigurations overhead in the network performance?</p>
 							</ul>
 						</div>
-						<img class="fragment" src="images/whatitcost.png" style="width: 80%; height: 70%;">
-					</div>
 					<aside class="notes">
 
 					</aside>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
 					<h3>Reconfiguration overhead</h3>
 					<p>Slices can share VNFs</p>
 					<div class="r-hstack">
@@ -1075,6 +1291,29 @@
 					</aside>
 				</section>
 
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Reconfiguration overhead</h3>
+					<p>Slices can share VNFs</p>
+					<div class="r-hstack">
+						<img src="images/slicing_sharing_based_on_network_functions.png" style="width: 80%; height: 80%; border: 4px solid #000000;">
+						<img src="images/modelexample.png" style="width: 70%; height: 70%;">
+					</div>
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
+					<h3>Reconfiguration overhead</h3>
+					<p>Slices can share VNFs</p>
+					<div class="r-hstack">
+						<img src="images/slicing_sharing_based_on_network_functions.png" style="width: 80%; height: 80%;">
+						<img src="images/modelexample.png" style="width: 70%; height: 70%; border: 4px solid #000000;">
+					</div>
+					<aside class="notes">
+
+					</aside>
+				</section>
 
 				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<h3>Reconfiguration overhead</h3>
@@ -1213,101 +1452,101 @@
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<p>By using network slicing, it is possible to allocate dedicated resources to slices that prioritise certain groups of users, e.g., critical applications such as traffic control systems, military operations, and surgery procedures. On the other hand, shared resources avoids resource underutilisation and improve slice alocations.</p>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li><b>What is the impact of resource sharing in the performance of network slicing for mobile users?</b></li>
+						<p>By using network slicing, <b>it is possible to allocate dedicated resources to slices that prioritise certain groups of users</b>, e.g., critical applications such as traffic control systems, military operations, and surgery procedures. On the other hand, <b>shared resources avoids resource underutilisation and improve slice alocations.</b></p>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<p>One heuristic solution was proposed. Once a service migration is requested, the NFV management and orchestration system can temporarily provide more resources to a slice deal with that traffic variation. Results show that dynamic slicing reduces underutilisation scenarios by applying resource distribution on demand while improving overall service migration performance. In the context of service migration, dynamic network slicing reduces the required time to perform service migrations and service outages, allows more service migrations if needed, and provides lower latency by placing services closer to their users.</p>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li><b>Can dynamic network slicing improve the performance of the service placement and migration process?</b></li>
+						<p><b>One heuristic solution was proposed</b>. Once a service migration is requested, the NFV management and orchestration system can temporarily provide more resources to a slice deal with that traffic variation. Results show that dynamic slicing reduces underutilisation scenarios by applying resource distribution on demand while improving overall service migration performance. <b>In the context of service migration, dynamic network slicing reduces the required time to perform service migrations and service outages, allows more service migrations if needed, and provides lower latency by placing services closer to their users.</b></p>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<p>This work proposed one mathematical model that estimates the required time to perform the resource allocation operations of one slice instance, including onboarding, deployment and runtime operations. In the simulated scenarios, which vary from 2 to 60 seconds to conclude one slice reconfiguration, it concludes that network slices that provide faster reconfigurations tend to converge their resources to a stable level suitable for their users' demand. As a result, slices that quickly balance their resources provide lower and more stable latency to their users than slices with higher reconfiguration delays.</p>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li><b>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</b></li>
+						<p><b>This work proposed one mathematical model</b> that estimates the required time to perform the resource allocation operations of one slice instance, including onboarding, deployment and runtime operations. <b>In the simulated scenarios, which vary from 2 to 60 seconds to conclude one slice reconfiguration</b>, it concludes that network slices that provide faster reconfigurations tend to converge their resources to a stable level suitable for their users' demand. As a result, <b>slices that quickly balance their resources provide lower and more stable latency to their users than slices with higher reconfiguration delays</b>.</p>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<p>User mobility triggers spatial and temporal traffic variations over time. In this context, such a dynamic scenario may present frequent and sometimes drastic traffic variations. On the one hand, dynamic resource allocation can redistribute resources along slices which present changing demands. If the time required to perform such slice modifications is high (30 seconds or longer), the infrastructure might not provide sufficient resource modifications to minimise resource underutilisation and maximise network performance.</p>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li><b>What is the impact of user mobility in network slicing management?</b></li>
+						<p><b>User mobility triggers spatial and temporal traffic variations over time</b>. In this context, such a dynamic scenario may present frequent and sometimes drastic traffic variations. On the one hand, dynamic resource allocation can redistribute resources along slices which present changing demands. <b>If the time required to perform such slice modifications is high (30 seconds or longer), the infrastructure might not provide sufficient resource modifications to minimise resource underutilisation and maximise network performance</b></p>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<p>Dynamic network slicing has the capability of 1) setting priority levels for distinct user groups and providing them different resources, 2) reducing resource underutilisation and improves network performance by on-demand resource (re)distributions, 3) improving service migrations by providing more resources to reduce the required time to perform that process. As a result, it allows the network to perform more migrations and keep its services closer to its users, reducing service latency. However, the cost of runtime slice modifications, in terms of processing demand and required time to perform that process, might affect the efficiency and frequency of the slice modification process.</p>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li><b>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</b></li>
+						<p>Dynamic network slicing has the capability of <b>1) setting priority levels for distinct user groups and providing them different resources, 2) reducing resource underutilisation and improves network performance by on-demand resource (re)distributions, 3) improving service migrations by providing more resources to reduce the required time to perform that process.</b> As a result, it allows the network to perform more migrations and keep its services closer to its users, reducing service latency. <b>However, the cost of runtime slice modifications, in terms of processing demand and required time to perform that process, might affect the efficiency and frequency of the slice modification process.</b></p>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 				
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<p>Close vehicles, i.e., within the same physical zone, can compose a vehicular cloud and can share or request computing resources to/from nearby vehicles. Vehicular resources increased the resource availability and improved the service latency. However, it increases the frequency in which the slice includes/excludes vehicles' resources from the set of available resources. That slice reconfiguration frequency might present a high overhead in resource management and be impractical in larger and more dynamic scenarios.</p>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li><b>Can dynamic slicing be applied in vehicular-cloud environments?</b></li>
+						<p>Close vehicles, i.e., within the same physical zone, can compose a vehicular cloud and can share or request computing resources to/from nearby vehicles. <b>Vehicular resources increased the resource availability and improved the service latency</b>. However, it increases the frequency in which the slice includes/excludes vehicles' resources from the set of available resources. <b>That slice reconfiguration frequency might present a high overhead in resource management and be impractical in larger and more dynamic scenarios</b>.</p>
+						<li style="opacity: 0.5;">Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
 					</ul>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate>
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-auto-animate data-visibility="uncounted">
 					<h3>Research questions</h3>
 					<ul class="r-fit-text">
-						<li>What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
-						<li>Can dynamic network slicing improve the performance of the service placement and migration process?</li>
-						<li>What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
-						<li>What is the impact of user mobility in network slicing management?</li>
-						<li>Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
-						<li>Can dynamic slicing be applied in vehicular-cloud environments?</li>
-						<li>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</li>
-						<p>This work developed MobFogSim simulator. MobFogSim supports user mobility, end-to-end dynamic network slicing, and vehicular network simulation in an edge-cloud computing architecture. This open-source validation environment for smart city scenarios is available for community use.</p>
+						<li style="opacity: 0.5;">What is the impact of resource sharing in the performance of network slicing for mobile users?</li>
+						<li style="opacity: 0.5;">Can dynamic network slicing improve the performance of the service placement and migration process?</li>
+						<li style="opacity: 0.5;">What is the required time to perform network slice operations such as resource allocation and slice reconfigurations and how it impacts the network performance?</li>
+						<li style="opacity: 0.5;">What is the impact of user mobility in network slicing management?</li>
+						<li style="opacity: 0.5;">Is dynamic slicing a suitable solution to deal with traffic variation triggered by mobile users in edge computing environments?</li>
+						<li style="opacity: 0.5;">Can dynamic slicing be applied in vehicular-cloud environments?</li>
+						<li><b>Is there a validation environment to simulate network resource management scenarios which includes user mobility, network slicing and service migration?</b></li>
+						<p><b>This work developed MobFogSim simulator</b>. MobFogSim supports user mobility, end-to-end dynamic network slicing, and vehicular network simulation in an edge-cloud computing architecture. This open-source validation environment for smart city scenarios is available for community use.</p>
 					</ul>
 				</section>
 
@@ -1326,7 +1565,7 @@
 					<h3>Scientific Production</h3>
 					<ul style="font-size: 0.43em;">
 						<p><b>Journals</b></p>
-						<li>C. Puliafito, <b>D. M. Goncalves</b>, M. M. Lopes, L. L. Martins, E. Madeira, E. Mingozzi, O. Rana, and L. Bittencourt. Mobfogsim: Simulation of Mobility and Migration for Fog Computing. Simulation Modelling Practice and Theory, 101:102062, 2020;</li>
+						<li>C. Puliafito, <b>D. M. Goncalves</b>, M. M. Lopes, L. L. Martins, E. Madeira, E. Mingozzi, O. Rana, and L. Bittencourt. Mobfogsim: Simulation of Mobility and Migration for Fog Computing. Simulation Modelling Practice and Theory, 101:102062, 2020;<br>*Diogo M. Gonçalves and Carlo Puliafito share the first author role in that paper.</li>
 						<li><b>D. M. Goncalves</b>, C. Puliafito, E. Mingozzi, L. F. Bittencourt, and E. R. M. Madeira. End-to-end Network Slicing in Vehicular Clouds Using the Mobfogsim Simulator. Ad Hoc Networks, page 103096, 2023;</li>
 						<li><b>D. M. Goncalves</b>, L. F. Bittencourt, and E. R. M. Madeira. Overhead and Performance of Dynamic Network Slice Allocation for Mobile Users. Future Generation Computer Systems, 2024;</li>
 						<p><b>Conferences</b></p>
@@ -1379,13 +1618,13 @@
 						<li>Dynamic hardware customisation for mobile users</li>
 						<ul><li>Customised hardware trades off flexibility for efficiency, enabling applications to run faster, reducing energy consumption, or both;</li>
 						<li>On FPGAs, hardware configuration can be made dynamically and on demand;</li>
-						<li><i>Hardware as a state</i> - hardware settings could follow the mobile users.</ul>
+						<li><span style="font-style: italic;">Hardware as a state</span> - hardware settings could follow the mobile users.</ul>
 					</ul>
 				</section>
 
 				<section data-background-transition="slide" data-background-image="images/logos/unicampbw.png" data-background-position="bottom 16px left 20px" data-background-size="3%">
 					<p style="font-size: 3em; font-family: 'Dancing Script', cursive;">Thank you</p>
-					<p><b>Diogo Gonçalves<br>diogomg<span style="color: #c2d102">@</span>lrc.ic.unicamp.br<br>github.com<span style="color: #c2d102">/</span>diogomg<span style="color: #c2d102">/</span>MobFogSim</b></p>
+					<p><b>Diogo Gonçalves<br>diogomg<span style="color: #84a9e8">@</span>lrc.ic.unicamp.br<br>github.com<span style="color: #84a9e8">/</span>diogomg<span style="color: #84a9e8">/</span>MobFogSim</b></p>
 					<img class="fragment fade-up" src="images/logos/interscity_logobw.png" style="width: 30%; height: 30%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
 					<img class="fragment fade-up" src="images/logos/logo-fapespbw.png" style="width: 21%; height: 21%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
 					<img class="fragment fade-up" src="images/logos/capes_logobw.png" style="width: 9%; height: 9%; box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);">
@@ -1394,7 +1633,7 @@
 					<p style="font-size: 17px;">Um agradecimento, em especial, à Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), processo nº 2021/05253-0.</p>
 				</section>
 
-				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-visibility="uncounted">
 					<h3>References</h3>
 					<ul style="font-size: 30px;">
 						<p>[1] GSMA: The State of Mobile Internet Connectivity 2023</p>
@@ -1406,13 +1645,13 @@
 					</aside>
 				</section>
 
-				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-visibility="uncounted">
 					<h2>Migration triggers</h2>
 					<img src="images/dynamicMigrationPoint.png" style="width: 60%; height: 60% border: 1px solid #000000;">
 					<p>Visual concept of Access Point’ area and its relationship with MobFogSim’s Migration Policy</p>
 				</section>
 
-				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-visibility="uncounted">
 					<h2>Migration algorithm</h2>
 					<pre data-id="code-animation"><code data-trim data-line-numbers>
 					while{mobileDevice is within the migration zone}{
@@ -1434,7 +1673,7 @@
 					</code></pre>
 				</section>
 
-				<section data-state="whitetheme" data-background-color="#FFF" data-background-transition="slide">
+				<section data-background-color="#FFF" data-background-transition="slide" data-background-image="images/logos/unicamp.svg" data-background-position="bottom 16px left 20px" data-background-size="3%" data-visibility="uncounted">
 					<h2>Slice reconfiguration algorithm</h2>
 					<pre data-id="code-animation"><code data-trim data-line-numbers>
 					if{isThereAnIncresingTrafficVariation()}{
@@ -1514,7 +1753,7 @@
 			
 			.icons img + img {
 				margin-left: -4px;
-			}-->
+			}
 		<style>			
 			.fragment.currentgrow {
 				filter: none;
@@ -1522,7 +1761,7 @@
 			.fragment.currentgrow.current-fragment {
 				filter: grow;
 			}
-		</style>
+		</style>-->
 
 		<script>
 			if( !navigator.userAgent.match( /(iphone|android)/gi ) && !!document.querySelector ) {
